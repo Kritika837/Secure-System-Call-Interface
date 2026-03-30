@@ -1,3 +1,4 @@
+ HEAD
 # User-Friendly System Call Interface for Enhanced Security
 
 A professional, MERN-stack based web interface that safely wraps operating system calls. This project demonstrates strict security measures, role-based access control, rate limiting, and comprehensive audit logging.
@@ -86,3 +87,8 @@ Every time the `Execute System Call` button is pressed:
 - **Encryption for Data at Rest:** Currently logs are stored in plaintext in the DB and file. Implementing Field-Level Encryption using AES-256 for sensitive parameters could prevent a database breach from exposing system architecture details.
 - **Audit Trail Analysis:** Exploring ELK stack (Elasticsearch, Logstash, Kibana) integrations or implementing a graph-visualization in React to highlight behavioral anomalies automatically.
 - **Real-World Application Parity:** To act as a genuine replacement for tools like `sudo`, it would need to securely hook into lower-level kernel structures via native C++ addons (`N-API`) rather than utilizing Node Core abstractions.
+
+# Secure-System-Call-Interface
+
+A secure MERN-based web interface for executing system calls with strict validation, role-based access control, rate limiting, and audit logging. Demonstrates OS-level interaction with enhanced security using JWT authentication, sandboxed execution, and real-time monitoring.
+ 299dc8442259b64818cafd2a98d6911c2a597c7a
