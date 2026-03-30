@@ -1,0 +1,111 @@
+[2026-03-26T05:11:41.657Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-26T05:11:50.995Z] User: admin | Syscall: processList | Params: {} | Status: success 
+[2026-03-26T05:12:28.738Z] User: user | Syscall: readFile | Params: {} | Status: failure | Error: Missing filePath parameter
+[2026-03-26T05:12:45.006Z] User: user | Syscall: listDir | Params: {} | Status: success 
+[2026-03-26T05:12:58.957Z] User: user | Syscall: processList | Params: {} | Status: success 
+[2026-03-26T05:13:10.606Z] User: user | Syscall: writeFile | Params: {} | Status: failure | Error: Missing parameters
+[2026-03-26T05:13:15.296Z] User: user | Syscall: listDir | Params: {} | Status: success 
+[2026-03-26T05:21:04.149Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-26T05:37:49.055Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-26T05:37:55.278Z] User: admin | Syscall: processList | Params: {} | Status: success 
+[2026-03-26T05:37:59.720Z] User: admin | Syscall: readFile | Params: {} | Status: failure | Error: Missing filePath parameter
+[2026-03-26T05:40:06.190Z] User: admin | Syscall: listDir | Params: {"filePath":"./ca1"} | Status: success 
+[2026-03-26T05:58:16.935Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-26T05:58:51.134Z] User: admin | Syscall: createDir | Params: {"dirPath":"C:\\new_folder"} | Status: success 
+[2026-03-26T06:02:43.034Z] User: admin | Syscall: createDir | Params: {"dirPath":"C:\\aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"} | Status: success 
+[2026-03-26T06:03:09.018Z] User: admin | Syscall: createDir | Params: {"dirPath":"C:\\Asmit"} | Status: success 
+[2026-03-26T06:04:50.677Z] User: admin | Syscall: listDir | Params: {"dirPath":"C:\\"} | Status: success 
+[2026-03-26T06:05:03.533Z] User: admin | Syscall: listDir | Params: {"dirPath":"d:\\"} | Status: failure | Error: ENOENT: no such file or directory, scandir 'd:\'
+[2026-03-26T06:05:10.096Z] User: admin | Syscall: listDir | Params: {"dirPath":"g:\\"} | Status: success 
+[2026-03-26T06:11:08.106Z] User: admin | Syscall: readFile | Params: {"filePath":"/home/Documents/CA1"} | Status: failure | Error: ENOENT: no such file or directory, open 'C:\home\Documents\CA1'
+[2026-03-26T06:15:11.862Z] User: admin | Syscall: readFile | Params: {"filePath":"C:\\Users\\happy\\Documents\\CA1\\file.pdf"} | Status: failure | Error: ENOENT: no such file or directory, open 'C:\Users\happy\Documents\CA1\file.pdf'
+[2026-03-26T06:16:28.048Z] User: admin | Syscall: readFile | Params: {"filePath":"C:\\Users\\happy\\Documents\\CA1.pdf"} | Status: success 
+[2026-03-26T06:18:03.964Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-26T06:20:27.655Z] User: admin | Syscall: createFile | Params: {"filePath":"C:\\docs\\new.txt","content":"optional_data"} | Status: failure | Error: ENOENT: no such file or directory, open 'C:\docs\new.txt'
+[2026-03-26T06:52:10.374Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-26T06:53:41.745Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-26T06:53:54.660Z] User: user | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-26T06:54:07.775Z] User: user | Syscall: listDir | Params: {} | Status: success 
+[2026-03-26T06:54:20.284Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-26T07:08:54.469Z] User: user | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-26T07:09:00.399Z] User: user | Syscall: listDir | Params: {} | Status: success 
+[2026-03-26T07:09:10.198Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-27T04:46:01.157Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-27T04:46:09.683Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-27T04:46:44.734Z] User: admin | Syscall: createDir | Params: {"dirPath":"C:\\altaffffff"} | Status: failure | Error: SECURITY VIOLATION: Path traversal or absolute paths are forbidden.
+[2026-03-27T04:46:56.745Z] User: admin | Syscall: createDir | Params: {"dirPath":"altafff"} | Status: success 
+[2026-03-27T08:08:35.171Z] User: user | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-28T09:44:52.132Z] User: user | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-28T09:45:02.660Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-28T10:04:53.799Z] User: admin | Syscall: createFile | Params: {"filePath":"C:\\docs\\new.txt","content":"optional_data"} | Status: failure | Error: Native C++ backend not available. Please run "npx node-gyp rebuild" in the backend directory.
+[2026-03-28T10:05:35.589Z] User: admin | Syscall: listDir | Params: {} | Status: failure | Error: Native C++ backend not available. Please run "npx node-gyp rebuild" in the backend directory.
+[2026-03-28T11:45:32.366Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-28T11:45:37.319Z] User: admin | Syscall: listDir | Params: {} | Status: failure | Error: Native C++ backend not available. Please run "npx node-gyp rebuild" in the backend directory.
+[2026-03-29T05:36:56.118Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T05:39:27.833Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-29T05:41:20.110Z] User: admin | Syscall: readFile | Params: {"filePath":"C:\\CPP ASSIGNMENTS\\ASSIGNMENT-1 FLOWCHART AND PSEU....pdf"} | Status: failure | Error: Native error: SECURITY VIOLATION: Path traversal or absolute paths are forbidden.
+[2026-03-29T05:41:42.220Z] User: admin | Syscall: readFile | Params: {"filePath":"C:\\docs\\secret.txt"} | Status: failure | Error: Native error: SECURITY VIOLATION: Path traversal or absolute paths are forbidden.
+[2026-03-29T05:49:02.885Z] User: admin | Syscall: listDir | Params: {"dirPath":"altaff"} | Status: success 
+[2026-03-29T05:49:25.424Z] User: admin | Syscall: listDir | Params: {"dirPath":"altafff"} | Status: success 
+[2026-03-29T05:51:52.429Z] User: admin | Syscall: readFile | Params: {"filePath":"file:///G:/ANTIGRAVITY/project/backend/sandbox/altafff/ALL%20MERGED.pdf"} | Status: failure | Error: Native error: Could not open file natively
+[2026-03-29T05:52:15.959Z] User: admin | Syscall: readFile | Params: {"filePath":"/altafff/ALL%20MERGED.pdf"} | Status: failure | Error: Native error: SECURITY VIOLATION: Path traversal or absolute paths are forbidden.
+[2026-03-29T05:52:37.951Z] User: admin | Syscall: readFile | Params: {"filePath":"altafff/ALL%20MERGED.pdf"} | Status: failure | Error: Native error: Could not open file natively
+[2026-03-29T06:02:50.755Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T06:02:50.797Z] User: admin | Syscall: readFile | Params: {"filePath":"altafff/ALL MERGED.pdf"} | Status: success 
+[2026-03-29T06:10:51.613Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T06:11:39.048Z] User: admin | Syscall: readFile | Params: {"filePath":"altafff/All MERGED.pdf"} | Status: success 
+[2026-03-29T06:13:52.872Z] User: admin | Syscall: createFile | Params: {"filePath":"altafff/zubu.txt"} | Status: success 
+[2026-03-29T06:16:16.604Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T06:16:16.612Z] User: admin | Syscall: createFile | Params: {"filePath":"test_create.txt","content":"Hello from Antigravity!"} | Status: success 
+[2026-03-29T06:21:48.839Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T06:21:48.860Z] User: admin | Syscall: readFile | Params: {"filepath":"altafff/zubu.txt"} | Status: success 
+[2026-03-29T06:23:19.791Z] User: admin | Syscall: createFile | Params: {"filePath":"altafff/zubi.txt"} | Status: success 
+[2026-03-29T06:24:59.754Z] User: admin | Syscall: writeFile | Params: {"filePath":"altafff/zubi.txt","content":"My name is altaf"} | Status: success 
+[2026-03-29T06:26:21.816Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-29T06:26:40.035Z] User: admin | Syscall: listDir | Params: {"filepath":"altafff"} | Status: success 
+[2026-03-29T06:27:41.050Z] User: admin | Syscall: createFile | Params: {"filePath":"altafff/info.txt"} | Status: success 
+[2026-03-29T06:28:31.418Z] User: admin | Syscall: deleteFile | Params: {"filePath":"altafff/zubu.txt"} | Status: success 
+[2026-03-29T06:30:30.425Z] User: admin | Syscall: createDir | Params: {"dirPath":"G:\\My Drive\\altafansari"} | Status: failure | Error: Native error: SECURITY VIOLATION: Path traversal or absolute paths outside sandbox are forbidden.
+[2026-03-29T06:30:48.845Z] User: admin | Syscall: createDir | Params: {"dirPath":"altafansari"} | Status: success 
+[2026-03-29T06:31:37.461Z] User: admin | Syscall: deleteDir | Params: {"dirPath":"altafansari"} | Status: failure | Error: Unimplemented system call or not yet mapped to native module.
+[2026-03-29T06:49:02.759Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T06:49:02.784Z] User: admin | Syscall: createDir | Params: {"dirPath":"test_delete_me"} | Status: success 
+[2026-03-29T06:49:02.790Z] User: admin | Syscall: deleteDir | Params: {"dirPath":"test_delete_me"} | Status: success 
+[2026-03-29T06:57:36.200Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T06:57:59.412Z] User: admin | Syscall: deleteDir | Params: {"dirPath":"altafansari"} | Status: success 
+[2026-03-29T07:00:13.159Z] User: admin | Syscall: renameFile | Params: {"oldPath":"info.txt","newPath":"newname.txt"} | Status: failure | Error: Unimplemented system call or not yet mapped to native module.
+[2026-03-29T07:04:11.138Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T07:04:11.151Z] User: admin | Syscall: createFile | Params: {"filePath":"info.txt","content":"Original content"} | Status: success 
+[2026-03-29T07:04:11.158Z] User: admin | Syscall: renameFile | Params: {"oldPath":"info.txt","newPath":"newname.txt"} | Status: success 
+[2026-03-29T07:07:07.486Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T07:07:26.369Z] User: admin | Syscall: renameFile | Params: {"oldPath":"info.txt","newPath":"newname.txt"} | Status: failure | Error: Failed to rename file natively (ensure source exists)
+[2026-03-29T07:11:42.896Z] User: admin | Syscall: renameFile | Params: {"oldPath":"info.txt","newPath":"newname.txt"} | Status: failure | Error: Failed to rename file natively (ensure source exists)
+[2026-03-29T07:12:17.611Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T07:12:43.933Z] User: admin | Syscall: renameFile | Params: {"oldPath":"newname.txt","newPath":"info.txt"} | Status: success 
+[2026-03-29T07:13:45.870Z] User: admin | Syscall: renameFile | Params: {"oldPath":"info.txt","newPath":"newname.txt"} | Status: success 
+[2026-03-29T07:14:19.006Z] User: admin | Syscall: processList | Params: {} | Status: failure | Error: Native processList not fully implemented yet for this demo. Use command line tools.
+[2026-03-29T07:21:13.840Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T07:21:13.861Z] User: admin | Syscall: processList | Params: {} | Status: success 
+[2026-03-29T07:24:16.634Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T07:24:23.640Z] User: admin | Syscall: processList | Params: {} | Status: success 
+[2026-03-29T07:26:03.446Z] User: admin | Syscall: createProcess | Params: {"command":"echo Hello World"} | Status: failure | Error: Native error: Native CreateProcess failed
+[2026-03-29T07:38:22.545Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T07:38:22.597Z] User: admin | Syscall: createProcess | Params: {"command":"notepad.exe"} | Status: success 
+[2026-03-29T07:38:22.604Z] User: admin | Syscall: createProcess | Params: {"command":"non_existent_app_9999.exe"} | Status: failure | Error: Native error: The system cannot find the file specified.
+
+[2026-03-29T08:05:59.125Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: failure | Error: Operation `users.findOne()` buffering timed out after 10000ms
+[2026-03-29T08:08:36.355Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: failure | Error: Operation `users.findOne()` buffering timed out after 10000ms
+[2026-03-29T12:02:59.683Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T12:03:05.405Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-29T12:03:40.869Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T12:04:49.618Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T12:22:30.995Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T12:24:00.781Z] User: admin | Syscall: createFile | Params: {"filePath":"altafff/MRIDUL.txt"} | Status: success 
+[2026-03-29T16:38:28.492Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T16:38:35.222Z] User: admin | Syscall: listDir | Params: {} | Status: success 
+[2026-03-29T16:38:54.736Z] User: user | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T16:38:59.259Z] User: user | Syscall: listDir | Params: {} | Status: success 
+[2026-03-29T16:41:34.502Z] User: user | Syscall: readFile | Params: {"filePath":"altafff/ALL MERGED.pdf"} | Status: success 
+[2026-03-29T16:46:49.898Z] User: user | Syscall: writeFile | Params: {"filePath":"altafff/zubi.txt","content":"SYSTEM_CHECK_PASSED"} | Status: success 
+[2026-03-29T17:06:46.011Z] User: user | Syscall: AUTH_LOGIN | Params: {} | Status: success 
+[2026-03-29T17:06:55.177Z] User: admin | Syscall: AUTH_LOGIN | Params: {} | Status: success 
